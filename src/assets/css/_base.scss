@@ -1,0 +1,61 @@
+@import '~lib/sandal/core';
+@import '~assets/css/core/functions', '~assets/css/core/mixins', '~assets/css/core/vars';
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+[class^="vux"], [class^="weui"] {
+  box-sizing: initial;
+}
+
+[v-cloak] {
+	display: none;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	background-color: #eee;
+}
+
+body {
+	// min-width: $minW;
+	margin: 0 auto;
+	background-color: #fff;
+	// font-size: $fontSize;
+	// color: $fontColor;
+}
+
+p {
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul, li {
+	list-style: none;
+	margin: 0 auto;
+  padding: 0;
+}
+
+img {
+	display: block;
+}
+
+.img {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+	margin: 0 auto;
+	font-weight: normal;
+}
+
+input[type="button"], input[type="submit"], input[type="reset"], input[type="file"]::-webkit-file-upload-button, button {
+    padding: 0;
+}
