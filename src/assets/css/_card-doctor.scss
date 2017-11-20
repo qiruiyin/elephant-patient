@@ -1,0 +1,111 @@
+@import '~lib/sandal/core';
+@import '~assets/css/core/functions', '~assets/css/core/mixins', '~assets/css/core/vars';
+
+$doctorMarginB: 12px;
+
+.card-doctor {
+	padding: $paddingL;
+	padding-right: 0;
+	padding-bottom: 0;
+	margin-bottom: $paddingB;
+	background-color: #fff;
+	display: flex;
+}
+
+.card-doctor-left {
+	width: $doctorImgW;
+	text-align: center;
+	color: $fontColorBlue;
+	line-height: 1.25;
+
+	img {
+		width: $doctorImgW;
+		margin-bottom: 10px;
+		border-radius: $doctorImgW;
+	}
+
+	p {
+		font-size: $fontSizeH2;
+	}
+
+	label {
+		font-size: $fontSizeLittle;
+	}
+}
+
+.card-doctor-right {
+	padding-left: 15px;
+	flex: 1;
+
+	h1 {
+		@extend %clearfix;
+		line-height: 30px;
+		margin-bottom: 16px;
+		font-size: $fontSizeH1;
+		
+		p {
+			float: left;
+			font-size: $fontSizeH2;
+		}
+
+		label {
+			line-height: 1;
+			margin-left: 1em;
+			padding: 5px .5em;
+			border: 1px solid $fontColorBlue;
+			font-size: $fontSizeTips;
+			color: $fontColorBlue;
+			border-radius: 4px;
+		}
+	}
+
+	.hospital {
+		position: relative;
+		font-size: $fontSizeTips;
+		color: $fontColorBlueDeep;
+		padding-left: 24px;
+		padding-bottom: $doctorMarginB;
+		border-bottom: 1px solid $borderColor;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 18px;
+			height: 18px;
+			background: url(~assets/img/rood.png) no-repeat;
+			background-size: 100%;
+		}
+	}
+
+	.positon-title {
+		margin-bottom: $doctorMarginB;
+		line-height: 1;
+		color: $fontColorLabel;
+		font-size: $fontSizeTips;
+	
+
+		label {
+			padding: 0 .5em;
+			border-left: 1px solid $fontColorLabel;
+			
+			&:first-child {
+				padding-left: 0;
+				border-left: 0;
+			}
+		}
+	}
+
+	.profit {
+		padding: .5em $paddingL $paddingL 0;
+		line-height: 1.75;
+		color: $fontColorGray;
+		text-align: justify;
+
+		span {
+			color: $fontColor;
+			font-size: 13px;
+		}
+	}
+}

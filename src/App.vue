@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <loading v-model="loadbar.isLoading"></loading>
-      1111
     <div class="container">
       <!-- <transition :name="'vux-pop-' + (direction.direction === 'forward' ? 'in' : 'out')"> -->
             <router-view class="router-view" :key="key"></router-view>

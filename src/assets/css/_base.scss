@@ -21,11 +21,11 @@ html, body {
 }
 
 body {
-	// min-width: $minW;
+	min-width: $minW;
 	margin: 0 auto;
 	background-color: #fff;
-	// font-size: $fontSize;
-	// color: $fontColor;
+	font-size: $fontSize;
+	color: $fontColor;
 }
 
 p {
